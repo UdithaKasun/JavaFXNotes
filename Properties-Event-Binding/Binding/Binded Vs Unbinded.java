@@ -38,6 +38,8 @@ public class Binding {
 		IntegerProperty num2 = new SimpleIntegerProperty(5);
 
 		NumberBinding sum = num1.add(num2);
+		//Same can be done using following code
+		NumberBinding sum = Bindings.add(num1,num2);
 		
 		System.out.println("Sum Before : "+sum.doubleValue());
 		

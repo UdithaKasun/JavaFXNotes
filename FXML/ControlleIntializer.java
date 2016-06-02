@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
 
 public class Controller implements Initializable{
 	  
-	  //To get initialize method you must implement Initializable Interface
+		 //To get initialize method you must implement Initializable Interface
 	  
 		//These are reference to the Controllers mentioned FXML file
 		@FXML
@@ -28,7 +28,7 @@ public class Controller implements Initializable{
 			lblText.setText(txtName.getText());
 		}
 
-    //This method runs after form loading is complete
+    		//This method runs after form loading is complete
 		@Override
 		public void initialize(URL location, ResourceBundle resources) {
 			System.out.println("Loading User Data");

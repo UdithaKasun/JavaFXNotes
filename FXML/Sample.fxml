@@ -8,8 +8,16 @@
 
 
 <AnchorPane prefHeight="264.0" prefWidth="407.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="application.Controller">
+   
+   <!--  fx:controller="application.Controller" adds controller to the View-->
+   
    <children>
+   
+   	  <!-- Here the Button's name is btnSubmit { fx:id } -->
+	  <!-- It will call getOutput() method when clicked { onAction="#getOutput" }-->   	  
+      
       <Button fx:id="btnSubmit" layoutX="101.0" layoutY="96.0" mnemonicParsing="false" onAction="#getOutput" text="Submit" />
+      
       <TextField fx:id="txtName" layoutX="101.0" layoutY="60.0" />
       <Label layoutX="101.0" layoutY="37.0" text="Enter Your Name :" />
       <Label fx:id="lblText" layoutX="101.0" layoutY="132.0">
@@ -18,4 +26,3 @@
          </font>
       </Label>
    </children>
-</AnchorPane>

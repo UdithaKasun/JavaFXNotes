@@ -12,7 +12,9 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
+			//Load FXML File
 			Parent root = FXMLLoader.load(getClass().getResource("Skin.fxml"));
+			
 			primaryStage.setScene(new Scene(root));
 			primaryStage.show();
 		} catch (IOException e) {

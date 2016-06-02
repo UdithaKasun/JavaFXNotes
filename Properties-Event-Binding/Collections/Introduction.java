@@ -2,7 +2,7 @@ Collections in JavaFX are defined by the javafx.collections package, which consi
 
 (1) Interfaces
 
-ObservableList: A list that enables listeners to track changes when they occur
+ObservableList : A list that enables listeners to track changes when they occur
 
 ListChangeListener: An interface that receives notifications of changes to an ObservableList
 
@@ -17,3 +17,5 @@ FXCollections: A utility class that consists of static methods that are one-to-o
 ListChangeListener.Change: Represents a change made to an ObservableList
 
 MapChangeListener.Change: Represents a change made to an ObservableMap
+
+

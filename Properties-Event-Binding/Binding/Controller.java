@@ -36,6 +36,9 @@ public class Controller implements Initializable{
 		public void initialize(URL location, ResourceBundle resources) {
 			myNum.setNumber(0);	
 			myNum.number.addListener((observe,oldVal,newVal) ->{
+				
+				//Binding myNum property with Progress Bar and Indicator
+				
 				pBar.progressProperty().bind(myNum.numberProperty());
 				pIndicator.progressProperty().bind(myNum.numberProperty());
 			});

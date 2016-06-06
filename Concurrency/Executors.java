@@ -1,10 +1,10 @@
 [Executors]
 
-# Executors are capable of running asynchronous tasks and typically manage a pool of threads, so we don't have 
-  to create new threads manually.
+(1) Executors are capable of running asynchronous tasks and typically manage a pool of threads, so we don't have 
+    to create new threads manually.
 
-  ExecutorService executor = Executors.newSingleThreadExecutor();
-  executor.submit(()->System.out.println("New Task");
+      ExecutorService executor = Executors.newSingleThreadExecutor();
+      executor.submit(()->System.out.println("New Task");
   
 <-- Executor submit method overloads -->
 
@@ -12,14 +12,14 @@
   Future<?> submit(Runnable task)
   <T> Future<T> submit(Runnable task, T result)
   
-# Executors have to be stopped explicitly - otherwise they keep listening for new tasks.
+(2) Executors have to be stopped explicitly - otherwise they keep listening for new tasks.
 
 <-- Executor Shutdown Methods -->
 
   shutdown() -> Waits for currently running tasks to finish.
   shutdownNow() -> Interrupts all running tasks and shut the executor down immediately.
 
-# Best way to shutdown executor
+(3) Best way to shutdown executor
 
 try {
     System.out.println("attempt to shutdown executor");
